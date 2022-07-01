@@ -1,0 +1,97 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desarturted-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    background: linear-gradient(#B0C4DE, #5698ac)
+}
+.main-content {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.content {
+    background-color: var(--very-pale-blue);
+    width: 450px;
+    border-radius: 25px;
+}
+.content .image {
+    margin: 0;
+    width: 450px;
+    border-radius: 25px;
+}
+#main-image {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.main-content .title {
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 30px;
+}
+.main-content .text {
+    text-align: center;
+    color: var(--desarturted-blue);
+    margin: 0 66px;
+    margin-bottom: 20px;
+}
+.plan-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    background-color: #EBF0FC;
+    margin: 0 50px;
+    border-radius: 10px;
+}
+.plan-container img {
+    margin: 15px 25px 0 18px;
+    width: auto;
+    height: 60%;
+}
+.plan-container p:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+.plan-container span:nth-child(1) {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+.plan-container span:nth-child(2) {
+    color: var(--desarturted-blue)
+}
+.plan-container a {
+    grid-area: 1 / 4 ;
+    margin-top: 25px;
+    color: var(--bright-blue);
+    margin-right: 20px;
+}
+.payment-button {
+    background: var(--bright-blue);
+    color: var(--pale-blue);
+    width: 80%;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 28px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+}
+.cancel-button {
+    background-color: var(--very-pale-blue);
+    color: var(--desarturted-blue);
+    width: 80%;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+}
